@@ -1,0 +1,92 @@
+/* nightshadeNeon stylesheet for neighborli
+This is our custom stylesheet for our neighborli mastodon instance.
+*/ 
+:root {
+    --background-color: #000000; /* Pure black background */
+    --scroll-gradient: linear-gradient(to bottom, rgba(155, 89, 182, 0.5), rgba(0, 0, 0, 0)); /* Purple gradient */
+}
+
+/* Apply the pure black background to the body */
+body.app-body {
+    background: var(--background-color); /* Use pure black background */
+    color: #ffffff; /* White text */
+    position: relative; /* Position for pseudo-element */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Create a gradient effect for the content when scrolling */
+body.app-body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%; /* Full height */
+    background: var(--scroll-gradient);
+    pointer-events: none; /* Allow clicks to pass through */
+    opacity: 0; /* Start with no visibility */
+    transition: opacity 0.3s; /* Smooth transition for visibility */
+}
+
+/* Show the gradient when scrolling */
+body.app-body {
+    background: var(--background-color);
+    background-attachment: fixed; /* Keep the background fixed */
+}
+
+/* Change the text color for most elements */
+.ui p, .landing-page p, .public-layout p {
+    color: #ffffff !important; /* White text */
+}
+
+/* Change link colors */
+a {
+    color: #9b59b6; /* Dark purple links */
+    transition: color 0.3s; /* Smooth transition for links */
+}
+
+a:hover {
+    color: #39ff14; /* Neon green on hover */
+}
+
+/* Customize button colors */
+.button {
+    background-color: #9b59b6; /* Dark purple buttons */
+    color: #ffffff; /* White text on buttons */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px 15px; /* Padding for buttons */
+}
+
+.button:hover {
+    background-color: #39ff14; /* Neon green on hover */
+    color: #000000; /* Change text color to black on button hover */
+}
+
+/* Adjust header background */
+header {
+    background: #4a235a; /* Dark purple header */
+    padding: 10px; /* Padding for header */
+    border-radius: 5px; /* Rounded corners for header */
+}
+
+/* Optional: Add a fun effect to all text on hover */
+.ui p:hover, .landing-page p:hover, .public-layout p:hover {
+    color: #39ff14; /* Change text color to neon green on hover */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #606085; /* Scrollbar thumb color */
+    border-radius: 12px; /* Rounded scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.8); /* Track color */
+}
