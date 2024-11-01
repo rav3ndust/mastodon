@@ -12,6 +12,7 @@
 [crowdin]: https://crowdin.com/project/mastodon
 
 > This is a soft fork of Mastodon for the [Neighborli](https://neighborli.xyz) social instance. It is kept in-sync with upstream and exists to keep open any changes and modifications we might make to it.
+![image](https://github.com/user-attachments/assets/4bfea696-54e1-42de-a4d6-b5b8b987c75c)
 
 Mastodon is a **free, open-source social network server** based on ActivityPub where users can follow friends and discover new ones. On Mastodon, users can publish anything they want: links, pictures, text, and video. All Mastodon servers are interoperable as a federated network (users on one server can seamlessly communicate with users from another one, including non-Mastodon software that implements ActivityPub!)
 
